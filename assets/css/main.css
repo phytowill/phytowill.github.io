@@ -2203,7 +2203,7 @@ input, select, textarea {
 		input[type="checkbox"] + label,
 		input[type="radio"] + label {
 			text-decoration: none;
-			color: #000000;
+			color: #ffffff;
 			cursor: pointer;
 			display: inline-block;
 			font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -3181,7 +3181,7 @@ input, select, textarea {
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: contain;
-				color: #000000;
+				color: #ffffff;
 				display: block;
 				font-size: 1.25rem;
 				height: 3.25rem;

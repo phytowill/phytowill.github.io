@@ -2250,13 +2250,13 @@ input, select, textarea {
 		input[type="radio"]:checked + label:before {
 			content: '\f00c';
 			background-color: #000000;
-			border-color: #000000;
+			border-color: #ffffff;
 			color: #ffffff;
 		}
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #000000;
+			border-color: #ffffff;
 			box-shadow: 0 0 0 1px #000000;
 		}
 

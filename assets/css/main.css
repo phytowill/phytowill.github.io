@@ -306,7 +306,7 @@ input, select, textarea {
 		position: relative;
 		top: -0.5rem;
 	}
-
+f
 	blockquote {
 		border-left: solid 0.5rem rgba(144, 144, 144, 0.25);
 		font-style: italic;
@@ -2700,7 +2700,7 @@ input, select, textarea {
 					-ms-flex-shrink: 1;
 					flex-shrink: 1;
 					padding: 1rem 0 0 0;
-					text-align: justify;
+					text-align: center;
 					width: 100%;
 				}
 
@@ -2753,7 +2753,7 @@ input, select, textarea {
 				transition: background-color 0.25s ease-in-out;
 				width: 2.25rem;
 				height: 2.25rem;
-				text-align: justify;
+				text-align: center;
 				line-height: 2.25rem;
 				border-radius: 2.25rem;
 				display: inline-block;
@@ -2798,7 +2798,7 @@ input, select, textarea {
 			font-size: 0.9rem;
 			font-weight: 600;
 			padding: 0 0.75rem 0.75rem 0.75rem;
-			text-align: justify;
+			text-align: left;
 		}
 
 		table thead {
@@ -3188,7 +3188,7 @@ input, select, textarea {
 				left: 0;
 				line-height: 3.25rem;
 				position: absolute;
-				text-align: justify;
+				text-align: center;
 				top: 0;
 				width: 3.25rem;
 			}
@@ -3558,7 +3558,7 @@ input, select, textarea {
 					#wrapper section > header {
 						justify-self: start;
 						padding: 0;
-						text-align: justify;
+						text-align: left;
 						width: 100%;
 					}
 
@@ -3574,7 +3574,7 @@ input, select, textarea {
 
 					#wrapper section > footer {
 						padding: 0;
-						text-align: justify;
+						text-align: left;
 					}
 
 						#wrapper section > footer ul.actions {
@@ -3864,7 +3864,7 @@ input, select, textarea {
 
 		body.is-ie #wrapper section > footer {
 			width: 50%;
-			text-align: justify;
+			text-align: left;
 			margin-left: 50%;
 			padding: 5rem;
 		}

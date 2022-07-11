@@ -1961,7 +1961,7 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #ffffff;
+			background-color: #000000;
 			box-shadow: none;
 			color: #ffffff !important;
 		}
@@ -2170,8 +2170,8 @@ input, select, textarea {
 	}
 
 		select option {
-			background-color: #ffffff;
-			color: #;
+			background-color: #000000;
+			color: #ffffff;
 		}
 
 		select:focus::-ms-value {

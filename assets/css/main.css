@@ -1963,7 +1963,7 @@ input, select, textarea {
 		.button.primary {
 			background-color: #000000;
 			box-shadow: none;
-			color: #ffffff !important;
+			color: #000000 !important;
 		}
 
 			input[type="submit"].primary:hover,
@@ -2249,15 +2249,15 @@ input, select, textarea {
 		input[type="checkbox"]:checked + label:before,
 		input[type="radio"]:checked + label:before {
 			content: '\f00c';
-			background-color: #ffffff;
-			border-color: #ffffff;
+			background-color: #000000;
+			border-color: #000000;
 			color: #ffffff;
 		}
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #ffffff;
-			box-shadow: 0 0 0 1px #ffffff;
+			border-color: #000000;
+			box-shadow: 0 0 0 1px #000000;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -3223,7 +3223,7 @@ input, select, textarea {
 
 		#wrapper:before {
 			background-attachment: fixed;
-			background-color: #ffffff;
+			background-color: #000000;
 			background-image: url("");
 			background-position: -50% 10%;
 			background-repeat: repeat-y;
@@ -3587,7 +3587,7 @@ input, select, textarea {
 
 					#wrapper > section > header {
 						background-attachment: fixed;
-						background-color: #ffffff;
+						background-color: #000000;
 						background-image: url("");
 						background-position: 25% 50%;
 						background-repeat: repeat-y;

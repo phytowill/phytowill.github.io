@@ -3223,7 +3223,7 @@ input, select, textarea {
 
 		#wrapper:before {
 			background-attachment: fixed;
-			background-color: #000000;
+			background-color: #ffffff;
 			background-image: url("");
 			background-position: -50% 10%;
 			background-repeat: repeat-y;

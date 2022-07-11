@@ -103,7 +103,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #ffffff;
+		background: #000000;
 		overflow-x: hidden;
 	}
 
@@ -157,7 +157,7 @@ input, select, textarea {
 		}
 
 	body {
-		background-color: #ffffff;
+		background-color: #000000;
 		color: #ffffff;
 	}
 

@@ -22,7 +22,7 @@ section, summary, time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	font: inherit; #43d9b8
 	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
@@ -3291,7 +3291,7 @@ input, select, textarea {
 		}
 
 			#wrapper > section > header:before {
-				background: #ffffff;
+				background: #000000;
 				content: '';
 				display: block;
 				margin-top: 1rem;
@@ -3304,7 +3304,7 @@ input, select, textarea {
 			}
 
 				#wrapper > section > header h1:before, #wrapper > section > header h2:before {
-					background: #ffffff;
+					background: #000000;
 					content: '';
 					display: block;
 					height: 2px;

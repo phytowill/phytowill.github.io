@@ -23,6 +23,7 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit; #ffffff
+	text-align: justify;
 	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
@@ -3251,7 +3252,7 @@ f
 			#wrapper section > header {
 				grid-area: header;
 				justify-self: end;
-				text-align: right;
+				text-align: justify;
 			}
 
 				#wrapper section > header h2 {
@@ -3397,7 +3398,7 @@ f
 		}
 
 			#wrapper section > header {
-				padding: 0 10rem 0 5rem;
+				padding: 0 10rem 0 2rem;
 				width: 35rem;
 			}
 

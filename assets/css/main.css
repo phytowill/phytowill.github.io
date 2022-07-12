@@ -3252,7 +3252,7 @@ f
 			#wrapper section > header {
 				grid-area: header;
 				justify-self: end;
-				text-align: justify;
+				text-align: right;
 			}
 
 				#wrapper section > header h2 {

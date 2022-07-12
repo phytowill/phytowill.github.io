@@ -176,7 +176,7 @@ input, select, textarea {
 		-webkit-transition: border-bottom-color 0.25s ease-in-out;
 		-ms-transition: border-bottom-color 0.25s ease-in-out;
 		transition: border-bottom-color 0.25s ease-in-out;
-		text-decoration: dotted;
+		text-decoration: underline dotted;
 		color: #ffffff;
 	}
 

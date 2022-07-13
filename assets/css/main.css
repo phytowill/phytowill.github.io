@@ -2748,10 +2748,10 @@ f
 			}
 
 			ul.icons li .icon {
-				-moz-transition: background-color 0.25s ease-in-out;
-				-webkit-transition: background-color 0.25s ease-in-out;
-				-ms-transition: background-color 0.25s ease-in-out;
-				transition: background-color 0.25s ease-in-out;
+				-moz-transition: #ffffff 0.25s ease-in-out;
+				-webkit-transition: #ffffff 0.25s ease-in-out;
+				-ms-transition: #ffffff 0.25s ease-in-out;
+				transition: #ffffff 0.25s ease-in-out;
 				width: 2.25rem;
 				height: 2.25rem;
 				text-align: center;

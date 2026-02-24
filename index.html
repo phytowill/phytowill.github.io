@@ -1,205 +1,353 @@
-<!DOCTYPE HTML>
-<!--
-	Paradigm Shift by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license) test
--->
-<html>
-	<head>
-		<title>@phytowill</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-FZQ90F5T72"></script>
-		<script>
-  			window.dataLayer = window.dataLayer || [];
- 			function gtag(){dataLayer.push(arguments);}
-  			gtag('js', new Date());
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>William Dwyer – Biologist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
 
-  			gtag('config', 'G-FZQ90F5T72');
-		</script>
-		
-	</head>
-	
-	<body class="is-preload">
+  <style>
+    /* ─── Variables ─────────────────────────────────────────── */
+    :root {
+      --bg:        #f5f2ec;
+      --ink:       #1a1a18;
+      --mid:       #7a7a72;
+      --accent:    #3b6e4a;
+      --border:    #d8d4cb;
+      --card-bg:   #eceae3;
+      --hover-bg:  #e2dfd7;
+      --font-serif: 'EB Garamond', Georgia, serif;
+      --font-mono:  'DM Mono', 'Courier New', monospace;
+    }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    /* ─── Reset ─────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-				<!-- Intro -->
-					<section class="intro">
-						<header>
-							<h1>Will P. Dwyer</h1>
-							<p></p>
-							<p>Bio PhD Student @ Stanford, Dinneny Lab <br> Editor @ <a href="https://thegoodscientists.com/">TheGoodScientists</a> <br> 2023 Cohort @ Knight-Hennessy </p>
-							<ul class="actions">
-								<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
-							</ul>
-						</header>
-						<div class="content">
-							<span class="image fill" data-position="center"><img src="images/pic01.jpg" alt="" /></span>
-						</div>
-					</section>
+    html { scroll-behavior: smooth; }
 
-				<!-- Section -->
-					<section id="first">
-						<header>
-							<h2>Building a Sorghum Cell Atlas</h2>
-						</header>
-						<div class="content">
-							<p><strong>Sorghum bicolor</strong>, a highly drought-tolerant grass species, is the world's 5th most important cereal crop and a promising source of biofuel. Despite its designation as a DOE flagship plant, few studies have examined Sorghum metabolism at the subcellular level. Using a combination of biolistics and confocal microscopy, we experimentally localize hundreds of Sorghum enzymes and generate a high-definition map of the Sorghum metabolic network. </p>
-							<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-							<p>Confocal microscopy images showing chloroplastic (A-C) and cytosolic (D-F) signal in biolistically transformed leaves of aquatic monocot Egeria densa. Candidate genes were tagged with C-term GFP and expressed under control of maize Ubiquitin1 promoter in modified pGVG vectors. </p>
-						</div>
-					</section>
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-serif);
+      font-size: 18px;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
 
-				<!-- Section -->
-					<section id="first">
-						<header>
-							<h2>Improving Enzyme Function Prediction</h2>
-						</header>
-						<div class="content">
-							<p><strong>Enzyme structure informs catalytic function. </strong> Leveraging newly released 3-dimensional structures from DeepMind's AlphaFold, I incorporate a curated library of 80,000+ protein models and state-of-the-art structural alignment algorithms to improve the efficacy of enzyme function prediction pipelines. </p>
-							<span class="image main"><img src="images/pic04.jpg" alt="" /></span>
-							<p>AlphaFold model of Arabidopsis thaliana cellulose synthase chain 3. Uniprot: <a href="https://www.uniprot.org/uniprotkb/F4I718/entry">F4I718</a> | AlphaFold: <a href="https://alphafold.ebi.ac.uk/entry/F4I718">AtCSI3</a> </p>
-						</div>
-					</section>
+    a { color: inherit; text-decoration: none; }
 
-				<!-- Section -->
-					<section id="first">
-						<header>
-							<h2>Indigenous Crops Research</h2>
-						</header>
-						<div class="content">
-							<p><strong>Indigenous crops, previously known as "Orphan crops", represent a crucial source of nutrients and revenue to the communities that cultivate them. </strong> Uniquely adapted to marginal growth conditions, Indigenous crops harbor vast reservoirs of genetic diversity and resilience traits. Research and terminology surrounding these precious crops, however, suffer from biases that risk damaging the rich history they share with their custodial communities. I partner with nonprofits and capacity building initiatives to examine the impact of colonial language and suggest an equitable framework for the study of Indigenous crops.  </p>
-							<span class="image main"><img src="images/pic05.jpg" alt="" /></span>
-							<p>From left to right, photos of understudied Indigenous crops sorghum, amaranthus and tef grass, all three widely cultivated in Africa and South America. Plots below each image track the number of new PubMed results per-year for that crop over the last 20 years (magenta) and the rate of increase in publications (cyan). </p>
-						</div>
-					</section>
-				
-				<!-- Section -->
-					<section id="first">
-						<header>
-							<h2>Intrinsically Disordered Proteins</h2>
-						</header>
-						<div class="content">
-							<p><strong> Intrinsically disordered proteins drive liquid-liquid phase separation (LLPS): </strong> the process by which soluble proteins spontaneously separate into a distinct gel-like phase and form granules, or so-called "membraneless organelles". Phase-separating bodies are emerging as novel compartmentalization strategy, but their exact function and mechanism of formation remain unclear. Honing in on a carbohydrate biosynthetic pathway in an Arabidopsis system, we explore the role of LLPS in plant metabolism. </p>
-							<span class="image main"><img src="images/pic06.jpg" alt="" /></span>
-							<p>AlphaFold model of Arabidopsis thaliana FIP1[III]-like protein, a highly disordered protein. Uniprot: <a href="https://www.uniprot.org/uniprotkb/F4JC20/entry">F4JC20</a> | AlphaFold: <a href="https://alphafold.ebi.ac.uk/entry/F4JC20">FIPS3</a> .</p>
-						</div>
-					</section>
+    /* ─── Header / Nav ──────────────────────────────────────── */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      padding: 0 clamp(1.5rem, 5vw, 4rem);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 58px;
+    }
 
-				<!-- Section -->
-					<section id="first">
-						<header>
-							<h2>Outreach & Advocacy</h3>
-						</header>
-						<div class="content">
-							<p><strong>I am grateful for the privilege to pursue my intellectual curiosities </strong>and recognize that science is a space that remains unacessible and hostile to many. I believe researchers have a duty to rectify the wrongs of scientific institutions through storytelling, advocacy and direct action. My outreach efforts center around: </p>
-							<p> -Building <a href="https://www.linkedin.com/pulse/launching-our-newsletter-undoing-ivory-tower-the-good-scientists/">platforms</a> to engage researchers with nonprofits and think critically about the current state of science.
-							<p> -Queer advocacy through <a href="https://plantae.org/plants-and-queerness/">writing</a> and <a href="https://twitter.com/CarnegiePlants/status/1546202367971848192?s=20&t=48A4aQWIlg7wsrc3R9siew">organizing</a>.</p>
-							<p> -Support for <a href="https://www.sciencedirect.com/science/article/pii/S1360138522002436?dgcid=coauthor">anti-colonial scientific initiatives</a> and <a href="https://www.jrbiotekfoundation.org/">local capacity building</a> in historically exploited regions of the world. 
-						</div>
-					</section>
-							<!-- Section -->
-								<section>
-									<header>
-										<h3>About Me</h3>
-										<p class="justify">Hello, and thanks for scrolling all the way down on my page! A little about me: I grew up in a small village called Louveciennes, in the Parisian suburbs of France, and moved to the outskirts of New York City with my family during high school. Following my pandemic graduation from Vassar Collegé (accent intentional) in 2020, I moved to California's Bay Area to train as a plant biologist. I'm currently a 2nd-year PhD student in the Dinneny Lab, where I study how plants sense water in their environment and design tools to visualize cells' physiological states. When I'm not at the bench, you are most likely to find me hammocking under coast redwoods or pulling cacti spines out of my hiking boots in the Mojave desert. My other hobbies include film <a href="https://phytowill.github.io/35mm/">photography</a>, ulimate frisbee, and greeting nearly every ginkgo tree I encounter. My favorite reads this year are Dancer from the Dance (Holleran), Ecotopia (Callenbach), Braiding Sweetgrass (Kimmerer) and the timeless Overstory (Powers). </p>
-									</header>
-									<div class="content">
-										<div class="gallery">
-										<a href="images/gallery/fulls/08.jpg" class="portrait"><img src="images/gallery/thumbs/08.jpg" alt="" /></a>
-										<a href="images/gallery/fulls/09.jpg" class="portrait"><img src="images/gallery/thumbs/09.jpg" alt="" /></a>
-										<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
-										</div>
-									</div>
-								</section>
+    .site-title {
+      font-family: var(--font-serif);
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+    }
 
-							<!-- Section -->
-								<section>
-									<header>
-										<h2>Peer-reviewed Publications</h2>
-									</header>
-									<div class="content">
-										<p>Houten SM, Dodatko T, Dwyer W, Hongjie C, Stauffer B, DeVita RJ, Vaz FM, Yu C, Leandro J (2023) Acyl-CoA dehydrogenase substrate promiscuity: Challenges and opportunities for development of substrate reduction therapy in disorders of valine and isoleucine metabolism. <strong> Journal of Inherited Metabolic Disorders. </strong>  <a href="https://pubmed.ncbi.nlm.nih.gov/37309295/">doi</a> </p>
-										<p>Dwyer W, Ibe C, and Rhee SY (2022) Renaming Indigenous crops and addressing colonial bias in scientific language. <strong>Trends in Plant Science. </strong> <a href="https://www.cell.com/trends/plant-science/fulltext/S1360-1385(22)00243-6">doi</a></p>  
-										<p>Hawkins C, Ginzburg D, Zhao K, Dwyer W, Xue B, Xu A, Rice S, Cole B, Paley S, Karp P, and Rhee SY (2021) Plant Metabolic Network: A comprehensive resource of plant metabolic information. <strong>Journal of Integrated Plant Biology.</strong> <a href="https://onlinelibrary.wiley.com/doi/10.1111/jipb.13163">doi</a> </p>  
-										<p>Field S, Dwyer W, and Rhee SY (2023) Virus manipulation of plant SG requires G3BP. <strong>In the works. </strong> </p>
-										<p>Field S, Dorone Y, Dwyer W, and Rhee SY (2023) The G3BP-RHM1 interaction is essential for maintaining rhamnosomes separate from stress granules. <strong>In the works. </strong> </p>
-										<p>Field S, Dorone Y, Dwyer W, and Rhee SY (2022) Elucidating the function of the novel phase separated rhamnosome organelle. <strong>In the works. </strong> </p>
-										<ul class="actions">
-										<li><a href="https://github.com/phytowill/phytowill.github.io/blob/master/Dwyer_resume.pdf" class="button large">CV</a></li>
-										<li><a href="https://orcid.org/0000-0003-3532-8754" class="button large">ORCID</a></li>
-										</ul>
-									</div>
-								</section>
-				<!-- Section -->
-					<section>
-						<header>
-							<h2>Contact</h2>
-						</header>
-						<div class="content">
-							<p><strong>I'd love to hear from you. </strong>You can reach me at any of the following contacts. Cheers!</p>
-							<!--<form>
-								<div class="fields">
-									<div class="field half">
-										<input type="text" name="name" id="name" placeholder="Name" />
-									</div>
-									<div class="field half">
-										<input type="email" name="email" id="email" placeholder="Email" />
-									</div>
-									<div class="field">
-										<textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" class="button" /></li>
-								</ul>
-							</form>-->
-						</div>
-						<footer>
-							<ul class="items">
-								<li>
-									<h3>Email</h3>
-									<a href="#">phytowill@gmail.com</a>
-								</li>
-								<li>
-									<h3>Phone</h3>
-									<a href="#">(646) 530-1820</a>
-								</li>
-								<li>
-									<h3>Address</h3>
-									<span>260 Panama Dr, Stanford University CA, 94305</span>
-								</li>
-								<li>
-									<h3>Elsewhere</h3>
-									<ul class="icons">
-										<li><a href="https://twitter.com/phytowill" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="https://www.linkedin.com/in/william-dwyer-158a55132/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-										<li><a href="https://github.com/phytowill" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-									</ul>
-								</li>
-							</ul>
-						</footer>
-					</section>
+    .site-title span {
+      color: var(--mid);
+      font-style: italic;
+      font-weight: 400;
+    }
 
-				<!-- Copyright -->
-					<div class="copyright">&copy; Untitled. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</div>
+    nav {
+      display: flex;
+      gap: 2rem;
+    }
 
-			</div>
+    nav a {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 300;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--mid);
+      transition: color 0.2s;
+      position: relative;
+    }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    nav a::after {
+      content: '';
+      position: absolute;
+      left: 0; bottom: -2px;
+      width: 0; height: 1px;
+      background: var(--accent);
+      transition: width 0.25s ease;
+    }
 
-	</body>
-</html>%  
+    nav a:hover { color: var(--ink); }
+    nav a:hover::after { width: 100%; }
+
+    /* ─── Hero ──────────────────────────────────────────────── */
+    .hero {
+      padding: clamp(3rem, 8vw, 6rem) clamp(1.5rem, 5vw, 4rem) clamp(2rem, 5vw, 3.5rem);
+      max-width: 680px;
+      animation: fadeUp 0.7s ease both;
+    }
+
+    .hero h1 {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 400;
+      line-height: 1.25;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1rem;
+      color: var(--mid);
+      font-style: italic;
+      max-width: 520px;
+      line-height: 1.7;
+    }
+
+    /* ─── Grid ──────────────────────────────────────────────── */
+    .grid-section {
+      padding: 0 clamp(1.5rem, 5vw, 4rem) clamp(4rem, 8vw, 6rem);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1px;
+      border: 1px solid var(--border);
+    }
+
+    .card {
+      background: var(--card-bg);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      transition: background 0.2s;
+      animation: fadeUp 0.6s ease both;
+    }
+
+    .card:hover { background: var(--hover-bg); }
+
+    /* stagger card animations */
+    .card:nth-child(1)  { animation-delay: 0.05s; }
+    .card:nth-child(2)  { animation-delay: 0.10s; }
+    .card:nth-child(3)  { animation-delay: 0.15s; }
+    .card:nth-child(4)  { animation-delay: 0.20s; }
+    .card:nth-child(5)  { animation-delay: 0.25s; }
+    .card:nth-child(6)  { animation-delay: 0.30s; }
+    .card:nth-child(7)  { animation-delay: 0.35s; }
+    .card:nth-child(8)  { animation-delay: 0.40s; }
+    .card:nth-child(9)  { animation-delay: 0.45s; }
+
+    .card-img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      background: var(--border);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* placeholder pattern */
+    .card-img::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        repeating-linear-gradient(
+          45deg,
+          transparent,
+          transparent 12px,
+          rgba(0,0,0,0.04) 12px,
+          rgba(0,0,0,0.04) 13px
+        );
+    }
+
+    .card-img::after {
+      content: attr(data-index);
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      font-weight: 300;
+      letter-spacing: 0.1em;
+      color: var(--mid);
+      display: grid;
+      place-items: center;
+    }
+
+    /* real images when added */
+    .card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .card:hover .card-img img { transform: scale(1.03); }
+
+    .card-body {
+      padding: 1rem 1.1rem 1.2rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .card-title {
+      font-size: 0.95rem;
+      font-weight: 500;
+      margin-bottom: 0.25rem;
+    }
+
+    .card-tag {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      font-weight: 300;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    /* ─── Footer ─────────────────────────────────────────────── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 1.4rem clamp(1.5rem, 5vw, 4rem);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    footer p {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      font-weight: 300;
+      letter-spacing: 0.06em;
+      color: var(--mid);
+      text-transform: uppercase;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .footer-links a {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      font-weight: 300;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--mid);
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: var(--ink); }
+
+    /* ─── Animation ──────────────────────────────────────────── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(14px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ─── Responsive ─────────────────────────────────────────── */
+    @media (max-width: 520px) {
+      nav { gap: 1.2rem; }
+      .grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── Header ─────────────────────────────────────────────── -->
+  <header>
+    <div class="site-title">William Dwyer <span>– Biologist</span></div>
+    <nav>
+      <a href="mailto:wpdwyer@stanford.edu">Contact</a>
+      <a href="#publications">Publications</a>
+      <a href="#research">Research</a>
+    </nav>
+  </header>
+
+  <!-- ── Hero ───────────────────────────────────────────────── -->
+  <section class="hero">
+    <h1>Research, visualizations,<br>and microscopy in plant biology.</h1>
+    <p>
+      PhD student at Stanford's Dinneny Lab. Knight-Hennessy Scholar (2023).
+      I use imaging, genomics, and computation to study how plants survive drought.
+    </p>
+  </section>
+
+  <!-- ── Project Grid ───────────────────────────────────────── -->
+  <main class="grid-section">
+    <div class="grid">
+
+      <a class="card" href="#">
+        <div class="card-img" data-index="01"></div>
+        <div class="card-body">
+          <div class="card-title">Sorghum Cell Atlas</div>
+          <div class="card-tag">Single-Cell Genomics</div>
+        </div>
+      </a>
+
+      <a class="card" href="#">
+        <div class="card-img" data-index="02"></div>
+        <div class="card-body">
+          <div class="card-title">Enzyme Function Prediction</div>
+          <div class="card-tag">Computational Biology</div>
+        </div>
+      </a>
+
+      <a class="card" href="#">
+        <div class="card-img" data-index="03"></div>
+        <div class="card-body">
+          <div class="card-title">Indigenous Crops Research</div>
+          <div class="card-tag">Ethnobotany</div>
+        </div>
+      </a>
+
+      <a class="card" href="#">
+        <div class="card-img" data-index="04"></div>
+        <div class="card-body">
+          <div class="card-title">Intrinsically Disordered Proteins</div>
+          <div class="card-tag">Biochemistry</div>
+        </div>
+      </a>
+
+      <a class="card" href="#">
+        <div class="card-img" data-index="05"></div>
+        <div class="card-body">
+          <div class="card-title">Outreach &amp; Advocacy</div>
+          <div class="card-tag">Science Communication</div>
+        </div>
+      </a>
+
+    </div>
+  </main>
+
+  <!-- ── Footer ─────────────────────────────────────────────── -->
+  <footer>
+    <p>© 2026 William P. Dwyer</p>
+    <div class="footer-links">
+      <a href="https://github.com/phytowill" target="_blank">GitHub</a>
+      <a href="https://scholar.google.com/citations?user=A17ZNBkAAAAJ&hl=en" target="_blank">Scholar</a>
+      <a href="mailto:wpdwyer@stanford.edu">Email</a>
+      <a href="https://orcid.org/0000-0003-3532-8754" target="_blank">ORCID</a>
+      <a href="cv.pdf" target="_blank">CV</a>
+    </div>
+  </footer>
+
+</body>
+</html>

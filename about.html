@@ -204,6 +204,49 @@
       text-decoration: underline;
       text-underline-offset: 3px;
     }
+
+    /* ─── Burger button ──────────────────────────────────────── */
+    .burger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .burger span {
+      display: block;
+      width: 22px;
+      height: 1px;
+      background: var(--ink);
+      transition: transform 0.25s ease, opacity 0.25s ease;
+    }
+
+    .burger.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+    .burger.open span:nth-child(2) { opacity: 0; }
+    .burger.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+    /* ─── Responsive ─────────────────────────────────────────── */
+    @media (max-width: 640px) {
+      .burger { display: flex; }
+
+      nav {
+        display: none;
+        position: absolute;
+        top: 58px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        gap: 1.25rem;
+        background: var(--bg);
+        padding: 1.25rem clamp(1.5rem, 5vw, 4rem) 1.5rem;
+        border-bottom: 1px solid var(--border);
+      }
+
+      nav.open { display: flex; }
+    }
   </style>
 </head>
 <body>
@@ -211,6 +254,9 @@
   <!-- ── Header ──────────────────────────────────────────────── -->
   <header>
     <a class="site-title" href="index.html">William Dwyer – Biologist</a>
+    <button class="burger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
     <nav>
       <a href="about.html">About</a>
       <a href="index.html#publications">Publications</a>
@@ -275,5 +321,19 @@
     </div>
   </footer>
 
+  <script>
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('nav');
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('open');
+      nav.classList.toggle('open');
+    });
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        burger.classList.remove('open');
+        nav.classList.remove('open');
+      });
+    });
+  </script>
 </body>
 </html>

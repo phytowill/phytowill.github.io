@@ -194,6 +194,10 @@
       place-items: center;
     }
 
+    /* hide placeholder when real image is present */
+    .card-img:has(img)::before,
+    .card-img:has(img)::after { display: none; }
+
     /* real images when added */
     .card-img img {
       width: 100%;

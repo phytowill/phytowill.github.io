@@ -10,11 +10,9 @@
 
   <style>
     :root {
-      --bg:        #ffffff;
-      --ink:       #000000;
-      --mid:       #000000;
-      --accent:    #000000;
-      --border:    #e0e0e0;
+      --bg:         #ffffff;
+      --ink:        #000000;
+      --border:     #e0e0e0;
       --font-serif: 'Manrope', sans-serif;
       --font-mono:  'Fira Code', monospace;
     }
@@ -50,23 +48,20 @@
 
     .site-title {
       font-family: var(--font-serif);
-      font-size: 1.375rem;
+      font-size: 1.3rem;
       font-weight: 700;
       letter-spacing: -0.1px;
       color: var(--ink);
     }
 
-    .site-title span { font-weight: 700; }
-
     nav { display: flex; gap: 2rem; }
 
     nav a {
       font-family: var(--font-serif);
-      font-size: 1.375rem;
-      font-weight: 400;
+      font-size: 1.1rem;
+      font-weight: 300;
       letter-spacing: -0.1px;
       color: var(--ink);
-      transition: opacity 0.2s;
       position: relative;
     }
 
@@ -75,31 +70,75 @@
       position: absolute;
       left: 0; bottom: -2px;
       width: 0; height: 1px;
-      background: var(--accent);
+      background: var(--ink);
       transition: width 0.25s ease;
     }
 
     nav a:hover::after { width: 100%; }
 
-    /* ─── Content ───────────────────────────────────────────── */
-    .about {
+    /* ─── Page content ──────────────────────────────────────── */
+    .page {
       padding: clamp(3rem, 8vw, 6rem) clamp(1.5rem, 5vw, 4rem);
       max-width: 680px;
     }
 
-    .about h1 {
-      font-size: clamp(2.15rem, 2.15rem + ((1vw - 0.2rem) * 1.333), 3rem);
+    /* Large page title */
+    .page-title {
+      font-size: clamp(1.75rem, 1.75rem + ((1vw - 0.2rem) * 0.392), 2rem);
       font-weight: 400;
       line-height: 1.125;
       letter-spacing: -0.1px;
+      margin-bottom: 2.5rem;
+    }
+
+    /* Name + role subheading */
+    .subheading {
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: -0.1px;
+      margin-bottom: 0.25rem;
+    }
+
+    .role {
+      font-size: 1rem;
+      font-weight: 300;
       margin-bottom: 1.5rem;
     }
 
-    .about p {
+    /* Bio paragraph */
+    .bio {
       font-size: clamp(1rem, 1rem + ((1vw - 0.2rem) * 0.196), 1.125rem);
       font-weight: 300;
       line-height: 1.6;
-      margin-bottom: 1rem;
+      margin-bottom: 2.5rem;
+    }
+
+    /* Labeled contact fields */
+    .fields {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .field-label {
+      font-size: 0.875rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 0.2rem;
+    }
+
+    .field-value {
+      font-size: 1rem;
+      font-weight: 300;
+    }
+
+    .field-value a {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .field-value a:hover {
+      text-decoration: none;
     }
 
     /* ─── Footer ─────────────────────────────────────────────── */
@@ -111,10 +150,7 @@
       justify-content: space-between;
       flex-wrap: wrap;
       gap: 0.75rem;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      background: var(--bg);
+      margin-top: 4rem;
     }
 
     footer p {
@@ -134,25 +170,72 @@
       letter-spacing: 0.08em;
       text-transform: uppercase;
     }
+
+    .footer-links a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
 
+  <!-- ── Header ──────────────────────────────────────────────── -->
   <header>
-    <a class="site-title" href="index.html">William Dwyer <span>– Biologist</span></a>
+    <a class="site-title" href="index.html">William Dwyer – Biologist</a>
     <nav>
       <a href="about.html">About</a>
       <a href="mailto:wpdwyer@stanford.edu">Contact</a>
       <a href="index.html#publications">Publications</a>
-      <a href="index.html#research">Research</a>
+      <a href="index.html#publications">35mm</a>
     </nav>
   </header>
 
-  <section class="about">
-    <h1>About</h1>
-    <p>Add your bio here.</p>
-  </section>
+  <!-- ── Content ─────────────────────────────────────────────── -->
+  <main class="page">
 
+    <h1 class="page-title">About</h1>
+
+    <p class="subheading">William P. Dwyer</p>
+    <p class="role">Plant Biologist · PhD Candidate</p>
+
+    <p class="bio">
+      Add your bio here. Describe your research background, interests,
+      and what drives your work.
+    </p>
+
+    <div class="fields">
+
+      <div>
+        <p class="field-label">Email</p>
+        <p class="field-value"><a href="mailto:wpdwyer@stanford.edu">wpdwyer@stanford.edu</a></p>
+      </div>
+
+      <div>
+        <p class="field-label">Institution</p>
+        <p class="field-value">Stanford University – Dinneny Lab</p>
+      </div>
+
+      <div>
+        <p class="field-label">ORCID</p>
+        <p class="field-value"><a href="https://orcid.org/0000-0003-3532-8754" target="_blank">0000-0003-3532-8754</a></p>
+      </div>
+
+      <div>
+        <p class="field-label">Google Scholar</p>
+        <p class="field-value"><a href="https://scholar.google.com/citations?user=A17ZNBkAAAAJ&hl=en" target="_blank">View publications</a></p>
+      </div>
+
+      <div>
+        <p class="field-label">GitHub</p>
+        <p class="field-value"><a href="https://github.com/phytowill" target="_blank">github.com/phytowill</a></p>
+      </div>
+
+      <div>
+        <p class="field-label">CV</p>
+        <p class="field-value"><a href="cv.pdf" target="_blank">Download PDF</a></p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ── Footer ──────────────────────────────────────────────── -->
   <footer>
     <p>© 2026 William P. Dwyer</p>
     <div class="footer-links">

@@ -141,6 +141,23 @@
       text-decoration: none;
     }
 
+    .field-links {
+      display: flex;
+      gap: 3rem;
+      margin-top: 1.2rem;
+    }
+
+    .field-links a {
+      font-size: 0.875rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-underline-offset: 3px;
+    }
+
+    .field-links a:hover {
+      text-decoration: underline;
+    }
+
     /* ─── Footer ─────────────────────────────────────────────── */
     footer {
       border-top: 1px solid var(--border);
@@ -224,24 +241,11 @@
         <p class="field-value"><a href="mailto:wpdwyer@stanford.edu">wpdwyer@stanford.edu</a></p>
       </div>
 
-      <div>
-        <p class="field-label">ORCID</p>
-        <p class="field-value"><a href="https://orcid.org/0000-0003-3532-8754" target="_blank">0000-0003-3532-8754</a></p>
-      </div>
-
-      <div>
-        <p class="field-label">Google Scholar</p>
-        <p class="field-value"><a href="https://scholar.google.com/citations?user=A17ZNBkAAAAJ&hl=en" target="_blank">View publications</a></p>
-      </div>
-
-      <div>
-        <p class="field-label">GitHub</p>
-        <p class="field-value"><a href="https://github.com/phytowill" target="_blank">github.com/phytowill</a></p>
-      </div>
-
-      <div>
-        <p class="field-label">CV</p>
-        <p class="field-value"><a href="cv.pdf" target="_blank">Download PDF</a></p>
+      <div class="field-links">
+        <a href="https://orcid.org/0000-0003-3532-8754" target="_blank">ORCID</a>
+        <a href="https://scholar.google.com/citations?user=A17ZNBkAAAAJ&hl=en" target="_blank">Google Scholar</a>
+        <a href="https://github.com/phytowill" target="_blank">GitHub</a>
+        <a href="cv.pdf" target="_blank">CV</a>
       </div>
 
     </div>

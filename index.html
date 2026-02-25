@@ -59,12 +59,24 @@
       font-weight: 700;
       letter-spacing: -0.1px;
       color: var(--ink);
+      position: relative;
     }
 
     .site-title span {
       color: var(--ink);
       font-weight: 700;
     }
+
+    .site-title::after {
+      content: '';
+      position: absolute;
+      left: 0; bottom: -2px;
+      width: 0; height: 1px;
+      background: var(--accent);
+      transition: width 0.25s ease;
+    }
+
+    .site-title:hover::after { width: 100%; }
 
     nav {
       display: flex;
@@ -275,7 +287,7 @@
 
   <!-- ── Header ─────────────────────────────────────────────── -->
   <header>
-    <div class="site-title">William Dwyer <span>– Biologist</span></div>
+    <a class="site-title" href="index.html">William Dwyer <span>– Biologist</span></a>
     <nav>
       <a href="about.html">About</a>
       <a href="#publications">Publications</a>

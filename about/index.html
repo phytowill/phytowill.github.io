@@ -93,7 +93,28 @@
     /* ─── Page content ──────────────────────────────────────── */
     .page {
       padding: clamp(3rem, 8vw, 6rem) clamp(1.5rem, 5vw, 4rem);
-      max-width: 680px;
+    }
+
+    .page-layout {
+      display: grid;
+      grid-template-columns: 1fr 260px;
+      gap: clamp(2rem, 4vw, 4rem);
+      align-items: start;
+      max-width: 960px;
+    }
+
+    /* ─── Photo column ───────────────────────────────────────── */
+    .page-photo img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    .photo-caption {
+      font-size: 0.75rem;
+      font-weight: 300;
+      line-height: 1.5;
+      margin-top: 0.6rem;
     }
 
     /* Large page title */
@@ -234,6 +255,14 @@
     @media (max-width: 640px) {
       .burger { display: flex; }
 
+      .page-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .page-photo {
+        max-width: 320px;
+      }
+
       nav {
         display: none;
         position: absolute;
@@ -268,44 +297,56 @@
 
   <!-- ── Content ─────────────────────────────────────────────── -->
   <main class="page">
+    <div class="page-layout">
 
-    <h1 class="page-title">About</h1>
+      <!-- Left: text -->
+      <div class="page-text">
+        <h1 class="page-title">About</h1>
 
-    <p class="subheading">William P. Dwyer</p>
-    <p class="role">
-       Biology PhD Candidate in the Dinneny Lab @ Stanford <br>
-       Knight-Hennessy Scholar (2023), NIH Cell & Molecular Biology Trainee (2024) <br>
-       Researcher @ SLAC National Accelerator Facility, Cryo-EM Division <br> <br>
-       Previously: Postbac in the Rhee Lab @ Carnegie Institution for Science <br>
-       B.A. in Biochemistry @ Vassar College (2020)
-    </p>
+        <p class="subheading">William P. Dwyer</p>
+        <p class="role">
+           Biology PhD Candidate in the Dinneny Lab @ Stanford <br>
+           Knight-Hennessy Scholar (2023), NIH Cell & Molecular Biology Trainee (2024) <br>
+           Researcher @ SLAC National Accelerator Facility, Cryo-EM Division <br> <br>
+           Previously: Postbac in the Rhee Lab @ Carnegie Institution for Science <br>
+           B.A. in Biochemistry @ Vassar College (2020)
+        </p>
 
-    <p class="bio">
-      Hello and thanks for reading through my page! A little about me: I was raised outside Paris, in France, where I spent my childhood
-      collecting periodic table elements from Ebay and mixing hydrochloric acid with tin foil in my family's garage. Spoiler: it goes boom.
-      I was first corrupted by biology during my undergrad studies in New York. After a brief excursion in the biomedical world, I fell in love
-      with plants and their otherworldly shapes. I followed my newfound interest to (metaphorically) greener pastures in California where I trained
-      as a plant biologist first with Seung Yon Rhee and currently with José Dinneny. My interests are at the interface of biotic and abiotic systems,
-      specifically: how do cells/tissues/organisms perceive their environment? I use the root—an innately sensitive organ—as a system to understand
-      how plants sense their surroundings and regulate their development as the world around them changes.
-      <br> <br>
-      I enjoy side-quests and meandering through branches of science.<strong> My lifelong aspiration is to resolve some of nature's magic and share it
-      through storytelling.</strong> I hope this page can be a starting point for that.
-    </p>
+        <p class="bio">
+          Hello and thanks for reading through my page! A little about me: I was raised outside Paris, in France, where I spent my childhood
+          collecting periodic table elements from Ebay and mixing hydrochloric acid with tin foil in my family's garage. Spoiler: it goes boom.
+          I was first corrupted by biology during my undergrad studies in New York. After a brief excursion in the biomedical world, I fell in love
+          with plants and their otherworldly shapes. I followed my newfound interest to (metaphorically) greener pastures in California where I trained
+          as a plant biologist first with Seung Yon Rhee and currently with José Dinneny. My interests are at the interface of biotic and abiotic systems,
+          specifically: how do cells/tissues/organisms perceive their environment? I use the root—an innately sensitive organ—as a system to understand
+          how plants sense their surroundings and regulate their development as the world around them changes.
+          <br> <br>
+          I enjoy side-quests and meandering through branches of science.<strong> My lifelong aspiration is to resolve some of nature's magic and share it
+          through storytelling.</strong> I hope this page can be a starting point for that.
+        </p>
 
-    <div class="fields">
+        <div class="fields">
 
-      <div>
-        <p class="field-label">Email</p>
-        <p class="field-value">wpdwyer@stanford.edu</p>
+          <div>
+            <p class="field-label">Email</p>
+            <p class="field-value">wpdwyer@stanford.edu</p>
+          </div>
+
+          <div class="field-links">
+            <a href="https://orcid.org/0000-0003-3532-8754" target="_blank">ORCID</a>
+            <a href="https://scholar.google.com/citations?user=A17ZNBkAAAAJ&hl=en" target="_blank">Google Scholar</a>
+            <a href="https://github.com/phytowill" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/phytowill/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/phytowill/phytowill.github.io/blob/master/Dwyer_resume.pdf" target="_blank">CV</a>
+          </div>
+
+        </div>
       </div>
 
-      <div class="field-links">
-        <a href="https://orcid.org/0000-0003-3532-8754" target="_blank">ORCID</a>
-        <a href="https://scholar.google.com/citations?user=A17ZNBkAAAAJ&hl=en" target="_blank">Google Scholar</a>
-        <a href="https://github.com/phytowill" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/phytowill/" target="_blank">LinkedIn</a>
-        <a href="https://github.com/phytowill/phytowill.github.io/blob/master/Dwyer_resume.pdf" target="_blank">CV</a>
+      <!-- Right: photo -->
+      <div class="page-photo">
+        <img src="/images/self01.jpg" alt="William Dwyer" />
+        <p class="photo-caption">Death Valley, 2026. Photo by a longtime friend.</p>
       </div>
 
     </div>

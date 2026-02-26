@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Publications – William Dwyer</title>
+  <title>About – William Dwyer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Fira+Code:wght@300..700&display=swap" rel="stylesheet" />
@@ -32,6 +32,7 @@
     }
 
     a { color: inherit; text-decoration: none; }
+
     strong { font-weight: 700; }
 
     /* ─── Header ────────────────────────────────────────────── */
@@ -91,67 +92,119 @@
 
     /* ─── Page content ──────────────────────────────────────── */
     .page {
-      padding: clamp(3rem, 8vw, 6rem) clamp(1.5rem, 5vw, 4rem) clamp(4rem, 8vw, 6rem);
+      padding: clamp(3rem, 8vw, 6rem) clamp(1.5rem, 5vw, 4rem);
       max-width: 680px;
     }
 
+    /* Large page title */
     .page-title {
       font-size: clamp(1.75rem, 1.75rem + ((1vw - 0.2rem) * 0.392), 2rem);
       font-weight: 400;
       line-height: 1.125;
       letter-spacing: -0.1px;
-      margin-bottom: 3rem;
+      margin-bottom: 2.5rem;
     }
 
-    /* ─── Publication list ──────────────────────────────────── */
-    .pub-year {
-      font-family: var(--font-mono);
-      font-size: 0.65rem;
-      font-weight: 300;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      margin-top: 3rem;
-      margin-bottom: 1.25rem;
-      padding-bottom: 0.5rem;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .pub-year:first-of-type {
-      margin-top: 0;
-    }
-
-    .pub-item {
-      margin-bottom: 2rem;
-    }
-
-    .pub-title {
+    /* Name + role subheading */
+    .subheading {
       font-size: 1rem;
-      font-weight: 500;
-      line-height: 1.5;
-      background-image: linear-gradient(var(--ink), var(--ink));
-      background-repeat: no-repeat;
-      background-position: 0 100%;
-      background-size: 0 1px;
-      transition: background-size 0.25s ease;
+      font-weight: 700;
+      letter-spacing: -0.1px;
+      margin-bottom: 0.25rem;
     }
 
-    .pub-title:hover {
-      background-size: 100% 1px;
-    }
-
-    .pub-authors {
-      font-size: 0.875rem;
+    .role {
+      font-size: 1rem;
       font-weight: 300;
-      margin-top: 0.35rem;
-      line-height: 1.55;
+      margin-bottom: 1.5rem;
     }
 
-    .pub-venue {
+    /* Bio paragraph */
+    .bio {
+      font-size: clamp(1rem, 1rem + ((1vw - 0.2rem) * 0.196), 1.125rem);
+      font-weight: 300;
+      line-height: 1.6;
+      margin-bottom: 2.5rem;
+    }
+
+    /* Labeled contact fields */
+    .fields {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .field-label {
+      font-size: 0.875rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 0.2rem;
+    }
+
+    .field-value {
+      font-size: 1rem;
+      font-weight: 300;
+    }
+
+    .field-value a {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .field-value a:hover {
+      text-decoration: none;
+    }
+
+    .field-links {
+      display: flex;
+      gap: 3rem;
+      margin-top: 1.2rem;
+    }
+
+    .field-links a {
+      font-size: 0.875rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-underline-offset: 3px;
+    }
+
+    .field-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* ─── Footer ─────────────────────────────────────────────── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 1.4rem clamp(1.5rem, 5vw, 4rem);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 4rem;
+    }
+
+    footer p {
       font-family: var(--font-mono);
       font-size: 0.65rem;
       font-weight: 300;
-      letter-spacing: 0.05em;
-      margin-top: 0.3rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .footer-links { display: flex; gap: 1.5rem; }
+
+    .footer-links a {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      font-weight: 300;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+      text-underline-offset: 3px;
     }
 
     /* ─── Burger button ──────────────────────────────────────── */
@@ -202,13 +255,13 @@
 
   <!-- ── Header ──────────────────────────────────────────────── -->
   <header>
-    <a class="site-title" href="index.html">William Dwyer – Biologist</a>
+    <a class="site-title" href="/">William Dwyer – Biologist</a>
     <button class="burger" aria-label="Toggle navigation">
       <span></span><span></span><span></span>
     </button>
     <nav>
-      <a href="about.html">About</a>
-      <a href="publications.html">Publications</a>
+      <a href="/about/">About</a>
+      <a href="/publications/">Publications</a>
       <a href="#">35mm</a>
     </nav>
   </header>
@@ -216,69 +269,48 @@
   <!-- ── Content ─────────────────────────────────────────────── -->
   <main class="page">
 
-    <h1 class="page-title">Publications</h1>
+    <h1 class="page-title">About</h1>
 
-    <p class="pub-year">2026</p>
+    <p class="subheading">William P. Dwyer</p>
+    <p class="role">
+       Biology PhD Candidate in the Dinneny Lab @ Stanford <br>
+       Knight-Hennessy Scholar (2023), NIH Cell & Molecular Biology Trainee (2024) <br>
+       Researcher @ SLAC National Accelerator Facility, Cryo-EM Division <br> <br>
+       Previously: Postbac in the Rhee Lab @ Carnegie Institution for Science <br>
+       B.A. in Biochemistry @ Vassar College (2020)
+    </p>
 
-    <div class="pub-item">
-      <a class="pub-title" href="https://doi.org/10.1186/s12915-026-02503-z" target="_blank" rel="noopener">
-        Shaping with water: linking moisture perception to development in plant roots
-      </a>
-      <p class="pub-authors"><strong>W.P. Dwyer</strong>, H.H. Torres-Martínez, J.R. Dinneny</p>
-      <p class="pub-venue">BMC Biology · 24(1):36 · 2026</p>
+    <p class="bio">
+      Hello and thanks for reading through my page! A little about me: I was raised outside Paris, in France, where I spent my childhood
+      collecting periodic table elements from Ebay and mixing hydrochloric acid with tin foil in my family's garage. Spoiler: it goes boom.
+      I was first corrupted by biology during my undergrad studies in New York. After a brief excursion in the biomedical world, I fell in love
+      with plants and their otherworldly shapes. I followed my newfound interest to (metaphorically) greener pastures in California where I trained
+      as a plant biologist first with Seung Yon Rhee and currently with José Dinneny. My interests are at the interface of biotic and abiotic systems,
+      specifically: how do cells/tissues/organisms perceive their environment? I use the root—an innately sensitive organ—as a system to understand
+      how plants sense their surroundings and regulate their development as the world around them changes.
+      <br> <br>
+      I enjoy side-quests and meandering through branches of science.<strong> My lifelong aspiration is to resolve some of nature's magic and share it
+      through storytelling.</strong> I hope this page can be a starting point for that.
+    </p>
+
+    <div class="fields">
+
+      <div>
+        <p class="field-label">Email</p>
+        <p class="field-value">wpdwyer@stanford.edu</p>
+      </div>
+
+      <div class="field-links">
+        <a href="https://orcid.org/0000-0003-3532-8754" target="_blank">ORCID</a>
+        <a href="https://scholar.google.com/citations?user=A17ZNBkAAAAJ&hl=en" target="_blank">Google Scholar</a>
+        <a href="https://github.com/phytowill" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/phytowill/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/phytowill/phytowill.github.io/blob/master/Dwyer_resume.pdf" target="_blank">CV</a>
+      </div>
+
     </div>
-
-    <p class="pub-year">2025</p>
-
-    <div class="pub-item">
-      <a class="pub-title" href="https://doi.org/10.1101/2025.08.01.664786" target="_blank" rel="noopener">
-        Cellulose Synthase Complex and Remorin Nanodomains Mediate Stress Resilience Through Cell Wall-Plasma Membrane Attachments
-      </a>
-      <p class="pub-authors">Y. Rui, A.V. Reyes, T.S. Grismer, N.B. Abel, <strong>W.P. Dwyer</strong>, T. Ott, J.J. Kieber, S.L. Xu, et al.</p>
-      <p class="pub-venue">bioRxiv · 2025 · Preprint</p>
-    </div>
-
-    <p class="pub-year">2024</p>
-
-    <div class="pub-item">
-      <a class="pub-title" href="https://doi.org/10.1101/2024.02.15.580454" target="_blank" rel="noopener">
-        Arabidopsis thaliana RHAMNOSE 1 condensate formation drives UDP-rhamnose synthesis
-      </a>
-      <p class="pub-authors">S. Field, Y. Dorone, <strong>W.P. Dwyer</strong>, J.A. Cox, R. Hastings, M. Blea, O.M.S. Carmo, et al.</p>
-      <p class="pub-venue">bioRxiv · 2024 · Preprint</p>
-    </div>
-
-    <p class="pub-year">2023</p>
-
-    <div class="pub-item">
-      <a class="pub-title" href="https://doi.org/10.1002/jimd.12642" target="_blank" rel="noopener">
-        Acyl-CoA dehydrogenase substrate promiscuity: Challenges and opportunities for development of substrate reduction therapy in disorders of valine and isoleucine metabolism
-      </a>
-      <p class="pub-authors">S.M. Houten, T. Dodatko, <strong>W. Dwyer</strong>, S. Violante, H. Chen, B. Stauffer, R.J. DeVita, F.M. Vaz, J.R. Cross, C. Yu, J. Leandro</p>
-      <p class="pub-venue">Journal of Inherited Metabolic Disease · 46(5):931–942 · 2023</p>
-    </div>
-
-    <p class="pub-year">2022</p>
-
-    <div class="pub-item">
-      <a class="pub-title" href="https://doi.org/10.1016/j.tplants.2022.08.022" target="_blank" rel="noopener">
-        Renaming Indigenous crops and addressing colonial bias in scientific language
-      </a>
-      <p class="pub-authors"><strong>W. Dwyer</strong>, C.N. Ibe, S.Y. Rhee</p>
-      <p class="pub-venue">Trends in Plant Science · 27(12):1189–1192 · 2022</p>
-    </div>
-
-    <p class="pub-year">2021</p>
-
-    <div class="pub-item">
-      <a class="pub-title" href="https://doi.org/10.1111/jipb.13163" target="_blank" rel="noopener">
-        Plant Metabolic Network 15: A resource of genome-wide metabolism databases for 126 plants and algae
-      </a>
-      <p class="pub-authors">C. Hawkins, D. Ginzburg, K. Zhao, <strong>W. Dwyer</strong>, B. Xue, A. Xu, S. Rice, B. Cole, S. Paley, P. Karp, S.Y. Rhee</p>
-      <p class="pub-venue">Journal of Integrative Plant Biology · 63(11):1888–1905 · 2021</p>
-    </div>
-
   </main>
+
 
   <script>
     const burger = document.querySelector('.burger');

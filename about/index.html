@@ -29,6 +29,7 @@
       line-height: 1.4;
       letter-spacing: -0.1px;
       min-height: 100vh;
+      overflow-x: hidden;
     }
 
     a { color: inherit; text-decoration: none; }
@@ -100,7 +101,10 @@
       grid-template-columns: 1fr 1fr;
       gap: clamp(2rem, 4vw, 4rem);
       align-items: start;
+      min-width: 0;
     }
+
+    .page-layout > * { min-width: 0; }
 
     /* ─── Photo column ───────────────────────────────────────── */
     .page-photo img {
@@ -177,7 +181,8 @@
 
     .field-links {
       display: flex;
-      gap: 3rem;
+      flex-wrap: wrap;
+      gap: 0.75rem 2rem;
       margin-top: 1.2rem;
     }
 
@@ -345,10 +350,11 @@
         </div>
       </div>
 
-      <!-- Right: photo -->
+      <!-- Right: photos -->
       <div class="page-photo">
         <img src="/images/self01.jpg" alt="William Dwyer" />
         <p class="photo-caption">Death Valley, 2026. Photo by a longtime friend.</p>
+        <img src="/images/self02.jpg" alt="William Dwyer" style="margin-top: 1.25rem;" />
       </div>
 
     </div>

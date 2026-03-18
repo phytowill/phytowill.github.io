@@ -109,12 +109,17 @@
     /* ─── Photo column ───────────────────────────────────────── */
     .page-photo {
       max-width: 80%;
+      align-self: stretch;
+      display: flex;
+      flex-direction: column;
     }
 
     .page-photo img {
       width: 100%;
       display: block;
       object-fit: cover;
+      flex: 1;
+      min-height: 0;
     }
 
     .page-photo img + img {

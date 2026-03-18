@@ -120,6 +120,12 @@
       margin-top: 0.6rem;
     }
 
+    .photo-divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 1.25rem 0;
+    }
+
     /* Large page title */
     .page-title {
       font-size: clamp(1.75rem, 1.75rem + ((1vw - 0.2rem) * 0.392), 2rem);
@@ -353,8 +359,9 @@
       <!-- Right: photos -->
       <div class="page-photo">
         <img src="/images/self01.jpg" alt="William Dwyer" />
-        <p class="photo-caption">Death Valley, 2026. Photo by a longtime friend.</p>
-        <img src="/images/self02.jpg" alt="William Dwyer" style="margin-top: 1.25rem;" />
+        <hr class="photo-divider" />
+        <img src="/images/self02.jpg" alt="William Dwyer" />
+        <p class="photo-caption">Above: Death Valley, 2026. Photo by a longtime friend. Below: Stanford, 2025. Photo by Micaela Go.</p>
       </div>
 
     </div>

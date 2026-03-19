@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Classical genetics – William Dwyer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Fira+Code:wght@300..700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg:         #ffffff;
+      --ink:        #000000;
+      --mid:        #555555;
+      --border:     #e0e0e0;
+      --font-serif: 'Manrope', sans-serif;
+      --font-mono:  'Fira Code', monospace;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-serif);
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.4;
+      letter-spacing: -0.1px;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ─── Header ────────────────────────────────────────────── */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      padding: 0 clamp(1.5rem, 5vw, 4rem);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 58px;
+    }
+
+    .site-title {
+      font-family: var(--font-serif);
+      font-size: 1.3rem;
+      font-weight: 700;
+      letter-spacing: -0.1px;
+      color: var(--ink);
+      position: relative;
+    }
+
+    .site-title::after {
+      content: '';
+      position: absolute;
+      left: 0; bottom: -2px;
+      width: 0; height: 1px;
+      background: var(--ink);
+      transition: width 0.25s ease;
+    }
+
+    .site-title:hover::after { width: 100%; }
+
+    nav { display: flex; gap: 2rem; }
+
+    nav a {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      font-weight: 300;
+      letter-spacing: -0.1px;
+      color: var(--ink);
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      left: 0; bottom: -2px;
+      width: 0; height: 1px;
+      background: var(--ink);
+      transition: width 0.25s ease;
+    }
+
+    nav a:hover::after { width: 100%; }
+
+    /* ─── Article ────────────────────────────────────────────── */
+    .article {
+      padding: clamp(3rem, 8vw, 6rem) clamp(1.5rem, 5vw, 4rem);
+      max-width: 780px;
+    }
+
+    .article-title {
+      font-size: clamp(2rem, 2rem + ((1vw - 0.2rem) * 1.333), 3rem);
+      font-weight: 400;
+      line-height: 1.125;
+      letter-spacing: -0.1px;
+      margin-bottom: 0.75rem;
+    }
+
+    .article-meta {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 300;
+      letter-spacing: 0.06em;
+      color: var(--mid);
+      margin-bottom: 2.5rem;
+    }
+
+    .article-body p {
+      font-size: clamp(1rem, 1rem + ((1vw - 0.2rem) * 0.196), 1.125rem);
+      font-weight: 300;
+      line-height: 1.65;
+      margin-bottom: 1.5rem;
+      max-width: 640px;
+    }
+
+    .article-img-wrap {
+      margin: 2.5rem 0;
+    }
+
+    .article-img-wrap img {
+      width: 100%;
+      display: block;
+    }
+
+    .article-img-caption {
+      font-size: 0.75rem;
+      font-weight: 300;
+      line-height: 1.5;
+      color: var(--mid);
+      margin-top: 0.5rem;
+    }
+
+    /* ─── Burger ─────────────────────────────────────────────── */
+    .burger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .burger span {
+      display: block;
+      width: 22px;
+      height: 1px;
+      background: var(--ink);
+      transition: transform 0.25s ease, opacity 0.25s ease;
+    }
+
+    .burger.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+    .burger.open span:nth-child(2) { opacity: 0; }
+    .burger.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+    /* ─── Responsive ─────────────────────────────────────────── */
+    @media (max-width: 640px) {
+      .burger { display: flex; }
+
+      nav {
+        display: none;
+        position: absolute;
+        top: 58px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        gap: 1.25rem;
+        background: var(--bg);
+        padding: 1.25rem clamp(1.5rem, 5vw, 4rem) 1.5rem;
+        border-bottom: 1px solid var(--border);
+      }
+
+      nav.open { display: flex; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── Header ──────────────────────────────────────────────── -->
+  <header>
+    <a class="site-title" href="/">William Dwyer – Biologist</a>
+    <button class="burger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <a href="/about/">About</a>
+      <a href="/publications/">Publications</a>
+      <a href="#">35mm</a>
+    </nav>
+  </header>
+
+  <!-- ── Article ─────────────────────────────────────────────── -->
+  <main class="article">
+    <h1 class="article-title">Classical genetics</h1>
+    <p class="article-meta">2021 · Rhee Lab, Carnegie Institution for Science, Stanford, CA</p>
+
+    <div class="article-body">
+
+      <p>Placeholder. A brief description of the project and its motivations goes here. What question were you trying to answer, and why does it matter? Set the scene for the reader before diving into the science.</p>
+
+      <p>Placeholder. Describe the approach — the technique, the model system, the experimental setup. Classical forward and reverse genetic screens remain powerful tools for dissecting gene function, particularly when paired with modern sequencing and phenotyping pipelines.</p>
+
+      <div class="article-img-wrap">
+        <img src="/images/project04.jpg" alt="Classical genetics" />
+        <p class="article-img-caption">Caption placeholder. Describe what is shown in this image and its relevance to the project.</p>
+      </div>
+
+      <p>Placeholder. What did you find? Summarize key results or observations in plain language. This is the story — what surprised you, what confirmed your hypothesis, what opened new questions.</p>
+
+      <p>Placeholder. Where does this work go next? Mention collaborators, funding, or publications associated with this project if applicable.</p>
+
+    </div>
+  </main>
+
+  <script>
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('nav');
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('open');
+      nav.classList.toggle('open');
+    });
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        burger.classList.remove('open');
+        nav.classList.remove('open');
+      });
+    });
+  </script>
+</body>
+</html>

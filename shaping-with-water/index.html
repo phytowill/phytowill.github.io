@@ -177,7 +177,7 @@
     .text-img-pair {
       display: flex;
       gap: 1.5rem;
-      align-items: stretch;
+      align-items: flex-start;
       margin-bottom: 1.5rem;
     }
 
@@ -186,18 +186,12 @@
     }
 
     .text-img-pair .img-col {
-      flex: 0 0 40%;
-      display: flex;
-      flex-direction: column;
+      flex: 0 0 30%;
     }
 
     .text-img-pair .img-col img {
       width: 100%;
       display: block;
-      flex: 1;
-      min-height: 0;
-      object-fit: contain;
-      object-position: top;
     }
 
     @media (max-width: 640px) {

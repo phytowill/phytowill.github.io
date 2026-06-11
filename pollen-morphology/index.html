@@ -246,8 +246,8 @@
 
       <div class="article-img-wrap article-img-wrap--inline">
         <div class="article-img-pair">
-          <img src="/pollen/pollen01.jpg" alt="Common yarrow (Achillea millefolium)" />
-          <img src="/pollen/pollen02.jpg" alt="California sagebrush (Artemisia californica)" />
+          <img src="/pollen-morphology/pollen01.jpg" alt="Common yarrow (Achillea millefolium)" />
+          <img src="/pollen-morphology/pollen02.jpg" alt="California sagebrush (Artemisia californica)" />
         </div>
         <p class="article-img-caption"><strong>Left: </strong>common yarrow (<em>Achillea millefolium</em>), an insect-dispersed pollen producer. Image from Prides Corner Farm. <strong>Right: </strong>California sagebrush (<em>Artemisia californica</em>), a wind-dispersed species endemic to California. Image from Wikipedia.</p>
       </div>
@@ -261,21 +261,21 @@
       <p>Pollen grains were collected directly from the field (for yarrow) or from herbaria specimen in the Oakmead collection at Jasper Ridge (for sagebrush). Grains were gold-sputtered and mounted for imaging following standard SEM sample prep workflow. Grains were imaged on JEOL JCM-7000 NeoScope SEM at 900× magnification and 10 kV accelerating voltage.</p>
 
       <div class="article-img-wrap">
-        <img src="/pollen/pollen03.jpg" alt="Pollen SEM image" />
+        <img src="/pollen-morphology/pollen03.jpg" alt="Pollen SEM image" />
         <p class="article-img-caption">Sample images from image segmentation pipeline. Code is available upon request.</p>
       </div>
 
       <p>A custom Python-based image processing and segmentation pipeline was created for this project. Segmented regions were retained as individual pollen grains if they satisfied the following criteria: area 30,000–350,000 px², circularity ≥ 0.20, aspect ratio ≤ 1.8, and centroid located ≥ 40 px from the image border. In total, 50 yarrow grains and 51 sagebrush grains were retained. For each retained grain, the following morphometric variables were extracted: diameter, area, perimeter, aspect ratio, circularity, solidity, spine count, spine density and roughness range. All linear and area measurements were converted to physical units using the instrument pixel size.</p>
 
       <div class="article-img-wrap">
-        <img src="/pollen/pollen04.jpg" alt="Violin plots" />
+        <img src="/pollen-morphology/pollen04.jpg" alt="Violin plots" />
         <p class="article-img-caption">Pollen grain morphometric measurements. Pairwise statistical testing by Mann-Whitney U tests (*: p < 0.05; **: p < 0.01; ***: p < 0.001). Analysis code available upon request.</p>
       </div>
 
       <p>Quantitative comparisons between pollen grains supported the prediction that pollination syndrome shapes grain architecture, even within a plant tribe. <strong>Yarrow grains are consistently larger (by up to 37%) and spinier than those of sagebrush </strong>, and this distinction was captured robustly across the nine variables tested. Larger grain size in entomophilous species is a <a href="https://www.sciencedirect.com/book/monograph/9780080231600/principles-of-pollination-ecology">well-documented trend</a> and is thought to reflect the reduced energetic cost of biotic transport: insect-mediated delivery does not impose the same aerodynamic size penalty as wind dispersal, relaxing selection for miniaturization. </p>
 
       <div class="article-img-wrap">
-        <img src="/pollen/pollen05.jpg" alt="PCA biplot of pollen morphology" />
+        <img src="/pollen-morphology/pollen05.jpg" alt="PCA biplot of pollen morphology" />
         <p class="article-img-caption">Principal component analysis of pollen morphology. Code available upon request.</p>
       </div>
 
